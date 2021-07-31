@@ -13,6 +13,10 @@
         <li>
             <a href="typography.html">Typography</a>
         </li>
+
+        <li>
+            <a href="tables.html">Tables</a>
+        </li>
     </nav>
     <article>
         <!-- Headings -->
@@ -25,14 +29,14 @@
             <h5>h5. heading</h5>
             <h6>h6. heading</h6>
             </p>
-            <p>
+            <code>
                 &lt;h1&gt; h1. heading &lt;/h1&gt; <br />
                 &lt;h2&gt; h2. heading &lt;/h2&gt; <br />
                 &lt;h3&gt; h3. heading &lt;/h3&gt; <br />
                 &lt;h4&gt; h4. heading &lt;/h4&gt; <br />
                 &lt;h5&gt; h5. heading &lt;/h5&gt; <br />
                 &lt;h6&gt; h6. heading &lt;/h6&gt; <br />
-            </p>
+            </code>
             <p>
                 .h1 through .h6 classes are also available, for when you want to match the font styling of a heading but
                 cannot use the associated HTML element.
@@ -43,18 +47,14 @@
             <p class="h4">h4. heading</p>
             <p class="h5">h5. heading</p>
             <p class="h6">h6. heading</p>
-            <p>
+            <code>
                 &lt;p class="h1"&gt;h1. heading&lt;/p&gt; <br />
                 &lt;p class="h2"&gt;h2. heading&lt;/p&gt; <br />
                 &lt;p class="h3"&gt;h3. heading&lt;/p&gt; <br />
                 &lt;p class="h4"&gt;h4. heading&lt;/p&gt; <br />
                 &lt;p class="h5"&gt;h5. heading&lt;/p&gt; <br />
                 &lt;p class="h6"&gt;h6. heading&lt;/p&gt; <br />
-            </p>
-        </section>
-
-        <section>
-
+            </code>
         </section>
 
         <!-- Display headings -->
@@ -72,31 +72,14 @@
             <h1 class="display-5">Display 5</h1>
             <h1 class="display-6">Display 6</h1>
             </p>
-            <p>
+            <code>
                 &lt;h1 class="display-1"&gt;Display-1&lt;/h1&gt; <br />
                 &lt;h1 class="display-2"&gt;Display-2&lt;/h2&gt; <br />
                 &lt;h1 class="display-3"&gt;Display-3&lt;/h3&gt; <br />
                 &lt;h1 class="display-4"&gt;Display-4&lt;/h4&gt; <br />
                 &lt;h1 class="display-5"&gt;Display-5&lt;/h5&gt; <br />
                 &lt;h1 class="display-6"&gt;Display-6&lt;/h6&gt; <br />
-            </p>
-            <p>
-                Display headings are configured via the $display-font-sizes Sass map and two variables,
-                $display-font-weight and $display-line-height.
-            </p>
-            <p>
-                $display-font-sizes: ( <br />
-                1: 5rem, <br />
-                2: 4.5rem, <br />
-                3: 4rem, <br />
-                4: 3.5rem, <br />
-                5: 3rem, <br />
-                6: 2.5rem <br />
-                ); <br />
-                <br />
-                $display-font-weight: 300; <br />
-                $display-line-height: $headings-line-height; <br />
-            </p>
+            </code>
         </section>
 
         <!-- Lead -->
@@ -105,7 +88,7 @@
                 Make a parapraph stand out by adding .lead
             </p>
             <p>
-            <p class-"lead">
+            <p class="lead">
                 This is a lead parageaph. It stands out from regular paragraphs.
             </p>
             <p>
@@ -127,32 +110,28 @@
             <p><small>This line of text is meant to be treated as fine print.</small></p> <br />
             <p><strong>This line rendered as bold text.</strong></p> <br />
             <p><em>This line rendered as italicized text.</em></p> <br />
-            <p>
-                &lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
+            <code>
+                &lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt; <br />
                 &lt;p&gt;&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;&lt;/p&gt;
+                <br />
                 &lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
+                <br />
                 &lt;p&gt;&lt;ins&gt;This is line meant to be treated as an addition to the
-                document.&lt;/ins&gt;&lt;/p&gt;
-                &lt;p&gt;&lt;u&gt;This line of text will render as underlined.&lt;/u&gt;&lt;p&gt;
+                document.&lt;/ins&gt;&lt;/p&gt; <br />
+                &lt;p&gt;&lt;u&gt;This line of text will render as underlined.&lt;/u&gt;&lt;p&gt; <br />
                 &lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;
-                &lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
-                &lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;
-            </p>
-            <p>
+                <br />
+                &lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt; <br />
+                &lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt; <br />
+            </code>
+            <code>
                 Beware that those tags should be used for semantic purpose: <br />
                 * &lt;mark&gt; represents text which is marked or highlighted for reference or notation purpose. <br />
                 * &lt;small&gt; represents side-comments and small print, like copyright and legal text. <br />
                 * &lt;s&gt; represents element that are no longer relevant or no longer accurate. <br />
                 * &lt;u&gt; represents a span of inline text which should be rendered in a way that indicates that it
                 has a non-textual annotation. <br />
-            </p>
-            <p>
-                If you want to style your text, you should use the following classes instead: <br />
-                * .mark will apply the same styles as &lt;mark&gt;. <br />
-                * .small will apply the same styles as &lt;small&gt;. <br />
-                * .text-decoration-underline will apply the same styles as &lt;u&gt;. <br />
-                * .text-decoration-line-through will apply te same styles as &lt:s&gt;. <br />
-            </p>
+            </code>
             <p>
                 While not shown above, feel free to use &lt;b&gt; and &lt;i&gt; in HTML5. &lt;b&gt; is meant to
                 highlight words or phrases without conveying additional importance, while &lt;i&gt; is mostly for voice,
@@ -176,12 +155,10 @@
                 <br />Add .initialism to an abbreviation for a slightly smaller font-size.
             </p>
             <p><abbr title="attribute">attr</abbr></p>
-            <p><abbr titile="HyperText Markup Language" class="initialism">HTML</abbr></p>
-            <p>
+            <code>
                 &lt;p&gt;&lt;abbr title="attribute"&gt;attr&lt;/abbr&gt;&lt;/p&gt;<br />
-                &lt;p&gt;&lt;abbr title="HyperText Markup Language" class="initialism"&gt;HTML&lt;/abbr&gt;&lt;/p&gt;
                 <br />
-            </p>
+            </code>
         </section>
         <!-- Blockquotes -->
         <section>
@@ -194,11 +171,11 @@
                 <p>A well-know quote, contained in a blockquote element.</p>
             </blockquote>
             </p>
-            <p>
+            <code>
                 &lt;blockquote class="blockquote"&gt; <br />
                 &lt;p&gt;A well-know quote, contained in a blackquote element.&lt;/p&gt; <br />
                 &lt;/blockquote&gt; <br />
-            </p>
+            </code>
         </section>
         <!-- Lists -->
         <section>
@@ -212,18 +189,51 @@
                     <ul>
                         <li>are unaffected by this style</li>
                         <li>will still show a bullet</li>
-                        <li>and have apprpriate left margin</li>
+                        <li>and have appropriate left margin</li>
                     </ul>
                 </li>
                 <li>This may still come in handy in some situations.</li>
             </ul>
             </p>
-        </section>
-        <section>
-            <!-- Responsive font sizes -->
-        </section>
-        <section>
-            <!-- Sass -->
+            <code>
+                &lt;ul class="list-unstyled"&gt; <br />
+                &lt;li&gt;This is a list.&lt;/li&gt; <br />
+                &lt;It appears completely unstyled.&lt;/li&gt; <br />
+                &lt;li&gt;Structurally, it's still a list.&lt;/li&gt; <br />
+                &lt;li&gt;However, this style only applies to immediate child elements.&lt;/li&gt; <br />
+                &lt;li&gt;Nested lists: <br />
+                &lt;ul&gt; <br />
+                &lt;li&gt;are unaffected by this style&lt;/li&gt; <br />
+                &lt;li&gt;will still show a bullet&lt;/li&gt; <br />
+                &lt;li&gt;and have appropriate left margin&lt;/li&gt; <br />
+                &lt;/ul&gt; <br />
+                &lt;/li&gt; <br />
+                &lt;li&gt;This may still come in handy in some situations.&lt;/li&gt; <br />
+                &lt;/ul&gt; <br />
+            </code>
+            <p>
+                Remove a list's bullets and apply some light margin with a combination of two classe, .list-inline and
+                .list-inline-item.
+            </p>
+            <p>
+            <ul class="list-inline">
+                <li class="list-inline-item">This is a list item.</li>
+                <li class="list-inline-item">And another one.</li>
+                <li class="list-inline-item">But they're displayed inline.</li>
+            </ul>
+            </p>
+            <code>
+                &lt;ul class="list-inline"> <br />
+                &lt;li class="list-inline-item">Это лист предметов.&lt;/li&gt; <br />
+                &lt;li class="list-inline-item">И ещё одно.&lt;/li&gt; <br />
+                &lt;li class="list-inline-item">Но они показаны в линию(в очередь)&lt;/li&gt; <br />
+            </code>
+            <p>
+                Align terms and descriptions horizontally by using our grid system's predefined classes (or semantic
+                mixins). For longer terms, you can optionally add a .text-truncate class to truncate the text with an
+                ellipsis.
+            </p>
+            <p>
         </section>
     </article>
 </body>

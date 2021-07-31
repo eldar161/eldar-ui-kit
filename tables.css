@@ -1,0 +1,18 @@
+table {
+    border: 1px solid rgb(70, 130, 180);
+    border-collapse: collapse;
+}
+td {
+    padding: 0 0.5em;
+    border-left: 1px solid rgb(70, 130, 180);
+    text-align: center;
+}
+th {
+    border: 1px solid rgb(70, 130, 180);
+    padding: 0.5em;
+}
+tr:nth-child(even)
+{
+    background-color: #dfdbdb;
+}
+`
