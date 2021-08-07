@@ -1,7 +1,9 @@
 @import url('./fonts.css');
 @import url('./tables.css');
+@import url('./reset.css');
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6, mark, del, s, ins, small, em, u, strong, b, i, abbr, blockquote, ol, ul, li, dl, dt, dd
+/* reset */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6, mark, del, s, ins, small, em, u, strong, b, i, abbr, blockquote, ol, ul, li, dl, dt, dd, j3
 {
     color: #333333;
     font-family: Roboto,Arial,Helvetica,Sans-serif;
@@ -52,20 +54,112 @@ h6, .h6 {
 .blockquote,.lead {
     font-size: 1.5em;
 }
-.list-unstyled
-{
+.list-unstyled {
     list-style: none;
 }
 .list-inline-item {
     display: inline;
 }
-code, section, nav
-{
+/* Navigation */
+code, section, nav {
     padding: 1em;
     display: block;
     border: 1px solid #333333;
 }
-section
-{
+section {
     margin: 1em 0;
+}
+
+/* text-decorations */
+.text-center {
+    text-align: center;
+}
+
+/* flex */
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.block {
+    padding: 1em;
+    display: block;
+    border: 1px solid rgba(33, 33, 33, 0.5);
+    background: rgb(239, 240, 241);
+    margin: 0.75em;
+    flex: 1 0 20%; 
+    box-shadow: 1px 2px rgba(66, 66, 66, 0.5);
+    border-radius: 1em;
+    line-height: 1.2em;
+}
+
+.block:hover{
+    background-color: rgb(173, 173, 173);
+    cursor: pointer;
+    transition: background-color,  2s;
+}
+
+.content {
+    padding: 1em;
+    background: rgb(236, 182, 193);
+}
+/* popup */
+.popup {
+    margin: 0;
+    position: absolute;
+    background-color: rgba(33, 33, 33, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.popup__content {
+    background-color: #ffffff;
+    width: 50%;
+    margin: 15% 25%;
+    min-height: 15em;;
+    padding: 1em;
+    border-radius: 3em;
+}
+.popup--inactive {
+    display: none;
+}
+
+.footer, .header {
+    padding: 3px;
+    background-color: rgb(70, 130, 180);
+    color: #333333;
+    border-bottom: 3px;
+    margin: 0;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;    
+    min-height: 80em;
+}    
+
+@media screen and (max-width: 800px) {
+    .body {
+        display: flex;
+        flex-direction: column;    
+    }    
+    .footer{
+        position: relative;
+    }
+}
+
+
+.navigation{
+    padding: 1em;
+    min-width: 25%;
+}
+
+#menu{
+    display: none;
+}
+#menu:target{
+    display: block;
 }
